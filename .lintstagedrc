@@ -1,7 +1,5 @@
 {
   "*.astro": ["eslint ."],
-  "src/**/*.{css,astro,tsx}": ["stylelint ."],
-  "*.{js,jsx,ts,tsx,md,mdx,json,astro}": [
-    "prettier --write --plugin=prettier-plugin-astro"
-  ]
+  "src/**/*.{css,astro,tsx}": ["stylelint src/**/*."],
+  "*.{js,jsx,ts,tsx,md,mdx,json,astro}": ["prettier --write"]
 }
