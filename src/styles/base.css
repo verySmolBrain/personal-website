@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  :root,
+  :ro ot,
   html[data-theme="light"] {
     --color-fill: 251, 254, 251;
     --color-text-base: 40, 39, 40;
