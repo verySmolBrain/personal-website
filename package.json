@@ -46,15 +46,5 @@
     "stylelint-config-html": "^1.1.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^7.15.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,mdx,json,astro}": [
-      "prettier --write --plugin=prettier-plugin-astro"
-    ]
   }
 }

@@ -11,4 +11,5 @@
 !.prettierrc
 !.eslintrc.js
 !eslint.config.mjs
+!.lintstagedrc
 !README.md
