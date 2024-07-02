@@ -12,4 +12,5 @@
 !.eslintrc.js
 !eslint.config.mjs
 !.lintstagedrc
+!.stylelintrc
 !README.md
