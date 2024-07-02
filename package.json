@@ -11,7 +11,7 @@
     "lint": "npm run lint:eslint && npm run lint:stylelint",
     "lint:eslint": "eslint .",
     "lint:stylelint": "stylelint 'src/**/*.{css,astro,tsx}'",
-    "prepare": "husky"
+    "prepare": "husky && husky install"
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
@@ -46,5 +46,9 @@
     "stylelint-config-html": "^1.1.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^7.15.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
