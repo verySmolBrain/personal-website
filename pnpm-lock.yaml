@@ -20,6 +20,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.11.3(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.5.3))(tailwindcss@3.4.4)
+      '@astrojs/ts-plugin':
+        specifier: ^1.8.0
+        version: 1.8.0
       '@types/react':
         specifier: ^18.3.3
         version: 18.3.3
@@ -38,6 +41,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.4
         version: 3.4.4
+      typescript:
+        specifier: ^5.5.3
+        version: 5.5.3
     devDependencies:
       '@divriots/jampack':
         specifier: ^0.24.4
@@ -96,9 +102,6 @@ importers:
       stylelint-config-standard:
         specifier: ^36.0.1
         version: 36.0.1(stylelint@16.6.1(typescript@5.5.3))
-      typescript:
-        specifier: ^5.5.3
-        version: 5.5.3
       typescript-eslint:
         specifier: ^7.15.0
         version: 7.15.0(eslint@9.6.0)(typescript@5.5.3)
@@ -168,6 +171,9 @@ packages:
   '@astrojs/telemetry@3.1.0':
     resolution: {integrity: sha512-/ca/+D8MIKEC8/A9cSaPUqQNZm+Es/ZinRv0ZAzvu2ios7POQSsVD+VOj7/hypWNsNM3T7RpfgNq7H2TU1KEHA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
+
+  '@astrojs/ts-plugin@1.8.0':
+    resolution: {integrity: sha512-SXbMemCjA66eHXLon2uDGkLAdbIRS+EzSBKPqBuOcQ4XzU/o+oTTp12cXBIQTOtP/zsnuJPYA6gc36Ylic196g==}
 
   '@babel/code-frame@7.24.7':
     resolution: {integrity: sha512-BcYH1CVJBO9tvyIZ2jVeXgSIMvGZ2FDRvDdOIVQyuklNKSsx+eppDEBq/g47Ayw+RqNFE+URvOShmf+f/qwAlA==}
@@ -4026,6 +4032,15 @@ snapshots:
       which-pm-runs: 1.1.0
     transitivePeerDependencies:
       - supports-color
+
+  '@astrojs/ts-plugin@1.8.0':
+    dependencies:
+      '@astrojs/compiler': 2.8.1
+      '@jridgewell/sourcemap-codec': 1.4.15
+      '@volar/language-core': 2.2.5
+      '@volar/typescript': 2.2.5
+      semver: 7.6.2
+      vscode-languageserver-textdocument: 1.0.11
 
   '@babel/code-frame@7.24.7':
     dependencies:

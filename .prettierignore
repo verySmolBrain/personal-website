@@ -13,4 +13,6 @@
 !eslint.config.mjs
 !.lintstagedrc
 !.stylelintrc
+!tailwind.config.mjs
+!astro.config.mjs
 !README.md

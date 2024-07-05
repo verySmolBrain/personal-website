@@ -25,6 +25,15 @@ export default [
     },
   },
   {
-    ignores: ["node_modules", "dist", "build", "out", "public", "*.mjs"],
+    ignores: [
+      "node_modules",
+      "dist",
+      "build",
+      "out",
+      "public",
+      "*.mjs",
+      ".astro",
+      "*/env.d.ts",
+    ],
   },
 ];

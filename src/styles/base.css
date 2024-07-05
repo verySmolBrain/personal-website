@@ -22,8 +22,13 @@
     --color-border: 171, 75, 8;
   }
 
-  /* ===== scrollbar ===== */
-  html {
-    overflow-y: scroll;
+  body {
+    @apply flex min-h-[100svh] flex-col bg-skin-fill font-mono text-skin-base selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
+  }
+}
+
+@layer components {
+  .focus-outline {
+    @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
   }
 }

@@ -1,0 +1,44 @@
+---
+import Hr from "@components/Hr.astro";
+import HeartIcon from "@assets/Icons/HeartIcon.astro";
+import Socials from "@assets/Icons/Socials.astro";
+
+export interface Props {
+  noMarginTop?: boolean;
+}
+
+const { noMarginTop = false } = Astro.props;
+---
+
+<footer class={`${noMarginTop ? "" : "mt-auto"}`}>
+  <Hr noPadding />
+  <div class="footer-wrapper">
+    <Socials centered />
+    <div class="made-with-love">
+      <span>Coded with</span>
+      <HeartIcon class="footer-heart-icon" />
+      <span>by Brian Huang</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    @apply w-full px-4;
+  }
+
+  .footer-wrapper {
+    @apply flex flex-col items-center justify-between;
+    @apply py-6 sm:py-4;
+  }
+
+  .footer-heart-icon {
+    @apply mx-2 h-4 w-4;
+  }
+
+  .made-with-love {
+    @apply flex flex-row items-center;
+    @apply my-2;
+    @apply whitespace-nowrap;
+  }
+</style>
